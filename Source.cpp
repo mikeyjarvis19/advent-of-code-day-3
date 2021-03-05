@@ -28,6 +28,7 @@ void part_1() {
 	auto tree = '#';
 	auto treeMiss = 'O';
 	auto treeHit = 'X';
+	// MAKE CODE A FUNCTION FOR PART 2, y = y + down, x = x + right
 	for (int y = 0; y < all_rows.size(); y++) {
 		auto characterAtPosition = all_rows[y][x];
 		if (characterAtPosition == openSquare){
