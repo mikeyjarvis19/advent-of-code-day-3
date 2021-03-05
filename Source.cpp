@@ -4,14 +4,12 @@
 #include <string>
 
 void part_1() {
-	//std::vector <char> row;
 	std::vector <std::vector<char>> all_rows;
 	std::ifstream fileContents("input.txt");
 	std::string rowString;
 	while (std::getline(fileContents, rowString)) {
 		std::vector<char> row(rowString.begin(), rowString.end());
 		all_rows.push_back(row);
-		//std::cout << "Row: " << rowString << "\n\n";
 	}
 	auto numberOfRows = all_rows.size();
 	auto requiredCharWidth = (numberOfRows * 3) + 1;
